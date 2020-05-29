@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    background-image: url(../img/sz.jpg);
+    background-size: cover;
+}
+
+.header{
+    height: 45px;
+    width: 100%;
+    background-color: black;
+    background-image: url(../img/header.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header a{
+    transition: 0.5s;
+    margin-left: 5.25px;
+}
+
+.menuaberto{
+    height: 100%;
+    width: 0;
+    background-color: #25242450;
+    position: fixed;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.btnfechar{
+    margin-top: -5px;
+    margin-right: 100%;
+}
+
+.menuaberto a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    display: block;
+    transition: 0.5s;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+.container1{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
+.container1 .caixa1{
+background-image: url(../img/sz.JPG);
+background-size: cover;
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+height:500px;
+}
+
+
+.slide{
+margin-top: 40%;
+}
+
+.container2{
+    margin-left: 10%;
+    width: 80%;
+}
+
+.container2 div{
+ width: 35%;
+ margin-left:5%;
+height: 200px;
+background-color: black;
+display: inline-block;
+}
