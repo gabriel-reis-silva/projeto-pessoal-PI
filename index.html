@@ -27,12 +27,12 @@
     <div class="principal" id="principal">
         <div class="container1">
             <div class="caixa1" id="caixa1">
-                <button id="slide" class="slide" onclick="start_slide();">Proxima foto</button>
+                <button id="slide" class="slide" onclick="start_slide(); liga();">Proxima foto</button>
             </div>
         </div>
         <div class="container2">
             <div class="caixa2">
-
+                <button onclick="desliga();">sdasd</button>
             </div>
             <div class="caixa3">
 
@@ -60,24 +60,50 @@
         document.getElementById("principal").style.marginLeft = "250px";
     }
 
-        var contador = -1;
+        var contador = 0;
+        var tempo = 2000;
+        var verificador = 0;
+        function desliga(){
+            
+            verificador++;
+            if(verificador = 1){
+                document.getElementById("caixa1").style.backgroundImage = `url(img/sz.jpg)`;
+                contador = 4;
+            }
+        }
 
+        function liga(){
+            verificador = 0;
+            contador = 0;
+            start_slide();
+        }
     function start_slide() {
 
+        contador++;
         
-        contador++
+
+        function contar_lento(){
+            setTimeout(() => {
+                start_slide(); 
+            }, tempo);
+        }
 
         if (contador <= 2) {
+
+        contar_lento();
+
             document.getElementById("caixa1").style.transition = `0.5s`;
             document.getElementById("caixa1").style.backgroundImage = `url(img/${contador}.jpg)`;
           
-
+        
             if(contador >= 2){
                 contador = -1;
             }
-            
+
         }
         
+        
     }
+    
 
 </script>
