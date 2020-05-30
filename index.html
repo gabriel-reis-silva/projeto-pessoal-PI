@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/slide.js"></script>
+    <script src="js/menu.js"></script>
     <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
     <title>Gabriel Reis</title>
 </head>
@@ -25,14 +27,12 @@
     </div>
 
     <div class="principal" id="principal">
-        <div class="container1">
+        <div class="container c1">
             <div class="caixa1" id="caixa1">
-                <button id="slide" class="slide" onclick="start_slide(); liga();">Proxima foto</button>
             </div>
         </div>
-        <div class="container2">
+        <div class="container c2">
             <div class="caixa2">
-                <button onclick="desliga();">sdasd</button>
             </div>
             <div class="caixa3">
 
@@ -47,63 +47,5 @@
 </html>
 
 <script>
-
-    function fechamenu() {
-        document.getElementById("menuhamburguer").style.width = "0";
-        document.getElementById("btnabrir").style.visibility = "visible";
-        document.getElementById("principal").style.marginLeft = "0";
-    }
-
-    function abremenu() {
-        document.getElementById("menuhamburguer").style.width = "20%";
-        document.getElementById("btnabrir").style.visibility = "hidden";
-        document.getElementById("principal").style.marginLeft = "250px";
-    }
-
-        var contador = 0;
-        var tempo = 2000;
-        var verificador = 0;
-        function desliga(){
-            
-            verificador++;
-            if(verificador = 1){
-                document.getElementById("caixa1").style.backgroundImage = `url(img/sz.jpg)`;
-                contador = 4;
-            }
-        }
-
-        function liga(){
-            verificador = 0;
-            contador = 0;
-            start_slide();
-        }
-    function start_slide() {
-
-        contador++;
-        
-
-        function contar_lento(){
-            setTimeout(() => {
-                start_slide(); 
-            }, tempo);
-        }
-
-        if (contador <= 2) {
-
-        contar_lento();
-
-            document.getElementById("caixa1").style.transition = `0.5s`;
-            document.getElementById("caixa1").style.backgroundImage = `url(img/${contador}.jpg)`;
-          
-        
-            if(contador >= 2){
-                contador = -1;
-            }
-
-        }
-        
-        
-    }
-    
-
+window.onload = liga();
 </script>

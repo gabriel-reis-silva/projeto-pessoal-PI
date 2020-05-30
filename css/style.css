@@ -1,7 +1,8 @@
 body{
     margin: 0;
-    background-image: url(../img/sz.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .header{
@@ -22,7 +23,7 @@ body{
 .menuaberto{
     height: 100%;
     width: 0;
-    background-color: #25242450;
+    background-color: #25242486;
     position: fixed;
     overflow-x: hidden;
     transition: 0.5s;
@@ -44,36 +45,35 @@ body{
     text-align: center;
 }
 
+.principal{
+    transition: 0.5s;
+}
 
-.container1{
+.container {
     margin: auto;
     width: 90%;
     text-align: center;
 }
 
-.container1 .caixa1{
-background-image: url(../img/sz.JPG);
+.container .caixa1{
+background-color: rgba(0, 0, 0, 0.226);
+border-radius: 5%;
 background-size: cover;
 width: 80%;
 margin-left: 10%;
 margin-right: 10%;
-height:500px;
+margin-top: 5%;
+margin-bottom: 2%;
+height:400px;
 }
 
-
-.slide{
-margin-top: 40%;
-}
-
-.container2{
-    margin-left: 10%;
-    width: 80%;
-}
-
-.container2 div{
- width: 35%;
- margin-left:5%;
+.c2 div{
+margin-left: 10%;
+width: 37%;
+margin-left:2.5%;
+margin-right: 2.5%;
+border-radius: 5%;
 height: 200px;
-background-color: black;
+background-color: rgba(0, 0, 0, 0.226);
 display: inline-block;
 }
