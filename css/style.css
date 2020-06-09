@@ -56,7 +56,7 @@ body{
 }
 
 .container .caixa1{
-background-color: rgba(0, 0, 0, 0.226);
+background-color: rgba(0, 0, 0, 0.274);
 border-radius: 5%;
 background-size: cover;
 width: 80%;
@@ -67,6 +67,12 @@ margin-bottom: 2%;
 height:400px;
 }
 
+.c1 img{
+width: 30%;
+margin-top: 10%;
+
+}
+
 .c2 div{
 margin-left: 10%;
 width: 37%;
@@ -74,6 +80,6 @@ margin-left:2.5%;
 margin-right: 2.5%;
 border-radius: 5%;
 height: 200px;
-background-color: rgba(0, 0, 0, 0.226);
+background-color: rgba(0, 0, 0, 0.274);
 display: inline-block;
 }
