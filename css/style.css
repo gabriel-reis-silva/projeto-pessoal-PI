@@ -69,8 +69,12 @@ height:400px;
 
 .c1 img{
 width: 30%;
-margin-top: 10%;
+margin: 0;
 
+}
+
+.fotos{
+    display: flex;
 }
 
 .c2 div{
