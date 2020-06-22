@@ -3,6 +3,15 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    font-family: monospace;
+}
+
+.eu{
+    background-image: url(../img/linguagens.jpg);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .header{
@@ -40,7 +49,6 @@ body{
     padding: 5px;
     display: block;
     transition: 0.5s;
-    font-family: monospace;
     font-size: 25px;
     text-align: center;
 }
@@ -56,7 +64,7 @@ body{
 }
 
 .container .caixa1{
-background-color: rgba(0, 0, 0, 0.274);
+background-color: rgba(0, 0, 0, 0.418);
 border-radius: 5%;
 background-size: cover;
 width: 80%;
@@ -67,9 +75,22 @@ margin-bottom: 2%;
 height:400px;
 }
 
+.container .caixa1_eu{
+background-image: url(../img/java.png);
+border-radius: 5%;
+background-size: cover;
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
+margin-top: 5%;
+margin-bottom: 2%;
+height:400px;
+}
+
+
 .c1 img{
-width: 30%;
-margin: 0;
+width: 70%;
+margin-top:1%;
 
 }
 
@@ -78,12 +99,34 @@ margin: 0;
 }
 
 .c2 div{
-margin-left: 10%;
 width: 37%;
 margin-left:2.5%;
+margin-bottom: 5%;
 margin-right: 2.5%;
 border-radius: 5%;
 height: 200px;
 background-color: rgba(0, 0, 0, 0.274);
 display: inline-block;
+}
+
+.caixa2{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.caminhos{
+    color: white;
+    margin-top: 35%;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+.musica{
+    background-image: url(https://www3.ecad.org.br/em-pauta/PublishingImages/resultados-2018-release.jpg);
+}
+
+.tecnologia{
+    background-image: url(https://cio.com.br/wp-content/uploads/2019/11/por-que-a-linguagem-rust-esta-em-ascensao.jpg);
 }

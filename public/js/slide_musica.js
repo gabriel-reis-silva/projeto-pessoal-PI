@@ -21,7 +21,7 @@
         contar_lento();
 
             document.body.style.transition = `3s`;
-            document.body.style.backgroundImage = `url(img/${contador}.jpg)`;
+            document.body.style.backgroundImage = `url(img/${contador}-musica.jpg)`;
                       
             if(contador >= 2){
                 contador = -1;

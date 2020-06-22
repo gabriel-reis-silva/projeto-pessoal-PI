@@ -1,0 +1,20 @@
+.container .caixa1_vc{
+    background-image: url(../img/sz.jpg);
+    border-radius: 5%;
+    background-size: cover;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    height:200px;
+    }
+.caixa1_vc {
+color: white;
+font-size: 20px;
+text-align: center;
+}
+
+body{
+    background-color: rgb(54, 165, 168);
+}

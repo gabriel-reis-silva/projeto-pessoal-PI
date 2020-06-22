@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style-musica.css">
+    <script src="js/slide_musica.js"></script>
+    <script src="js/menu.js"></script>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Gabriel Reis</title>
+</head>
+
+<body>
+
+    <div class="menuaberto" id="menuhamburguer">
+        <a href="#" class="btnfechar" onclick="fechamenu();"><img src="img/icone_fechar.png" width="40px"
+                id="botaofechar"></a>
+        <a href="index.html">Home</a>
+        <a href="sobre_mim.html">Quem sou eu?</a>
+        <a href="musica.html">A música</a>
+        <a href="tecnologia.html">A tecnologia</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <div class="header">
+        <a class="botaoabrir" onclick="abremenu();"><img src="img/menu_hamburguer.png" width="40px"
+                id="btnabrir"></a>
+    </div>
+
+    <div class="principal" id="principal">
+        <div class="container c1">
+            <div class="caixa1 left">
+                <p class="texto1">
+                    <h1>Falando em música!</h1>
+                    <img src="img/guitarra-gif.gif" width="80%">
+                    <br>
+                    Um dos caminhos que pretendia seguir é a música. 
+                    Todos nós conhecemos a música desde sempre, mas acredito que só a conhecemos de verdade quando a fazemos de alguma forma. 
+                    E conhecer a música que me faz gostar mais dela, por isso é uma das áreas que me via/vejo seguindo.
+                </p>
+            </div>
+            <div class="container c2">
+                <div class="caixa2 right musica1" id="rightbox">
+                  
+                    <iframe src="https://open.spotify.com/embed/album/7xl50xr9NDkd3i2kBbzsNZ" width="100%" height="280" frameborder="0" style="border-radius: 5%;" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                    <div class="caixa2 right musica" id="rightbox">
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
+
+<script>
+    window.onload = liga();
+</script>

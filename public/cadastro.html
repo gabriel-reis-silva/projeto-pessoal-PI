@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="js/menu.js"></script>
+    <script src="js/funcoes.js"></script>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Gabriel Reis</title>
+</head>
+
+<body class="eu">
+
+    <div class="menuaberto" id="menuhamburguer">
+        <a href="#" class="btnfechar" onclick="fechamenu();"><img src="img/icone_fechar.png" width="40px" id="botaofechar"></a>
+        <a href="index.html">Home</a>
+        <a href="sobre_mim.html">Quem sou eu?</a>
+        <a href="musica.html">A música</a>
+        <a href="tecnologia.html">A tecnologia</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <div class="header">
+        <a class="botaoabrir" onclick="abremenu();"><img src="img/menu_hamburguer.png" width="40px" id="btnabrir"></a>
+    </div>
+    <div class="principal" id="principal">
+        <div class="container c1">
+            <div class="caixa1_cad" id="caixa1">
+                <form id="form_cadastro" method="post" onsubmit="enviaContatoProBanco()">
+                    <h2>Cadastro</h2>    
+                    <p>Nome:</p> <input type="text" name="nome" id="nome">
+                    <p>Usuário:</p> <input type="text" name="login" id="login">
+                    <p>Senha:</p> <input type="password" name="senha" id="senha">
+                    <p>Data de Nascimento:</p> <input type="date" name="data_nasc" id="data_nasc">
+                    <button id="btn_entrar" class="btn_envio" type="submit">Cadastrar</button>
+                
+                    <ul id="mensagemErro" class="m-erro">
+                    </ul>
+                </form>
+                
+                <img src="aguarde2.gif" id="img_aguarde" style="display: none;" width="100px">
+                
+                <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
+                    Erro no cadastro
+                </div>
+            </div>
+        </div>
+    
+
+</body>
+</html>
+<script>
+function enviaContatoProBanco(){
+console.log('parou no enviacontato');
+var erros = validaContato(erros);
+mensagemErro.innerHTML = "";
+
+if(erros.length > 0){
+  for(var i=0; i < erros.length; i++){
+      var erro = erros[i];
+      var li = document.createElement("li");
+      li.innerHTML = erro;
+      mensagemErro.appendChild(li);
+  }
+}else{
+    return cadastrar();
+}
+
+
+function cadastrar() {
+    console.log('parou no cadastrar');
+        aguardar();
+        var formulario = new URLSearchParams(new FormData(form_cadastro));
+        fetch("/usuarios/cadastrar", {
+            method: "POST",
+            body: formulario
+        }).then(function (response) {
+            
+            if (response.ok) {
+
+                window.location.href='login.html';
+
+            } else {
+
+                console.log('Erro de cadastro!');
+                response.text().then(function (resposta) {
+                    div_erro.innerHTML = resposta;
+                });
+                finalizar_aguardar();
+            }
+        });
+
+        return false;
+    }
+
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display='block';
+        div_erro.style.display='none';
+    }
+
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display='none';
+        div_erro.style.display='block';
+    }
+}
+
+function validaContato(){
+    console.log('parou no validacontato ');    
+    var erros = [];
+
+        if(!nome.value){
+          erros.push("Prencher nome!");
+        }
+
+        if(!senha.value){
+          erros.push("Prencher senha!");
+        }
+        return erros;
+      }
+
+</script>

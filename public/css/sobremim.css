@@ -1,0 +1,42 @@
+.container .caixa1_eu{
+    background-image: url(../img/sz.jpg);
+    border-radius: 5%;
+    background-size: cover;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    height:200px;
+    }
+.caixa1_eu {
+color: white;
+font-size: 20px;
+text-align: center;
+}
+.caixa2{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.caminhos{
+    color: white;
+    margin-top: 35%;
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+.Honestidade{
+    background-image: url(../img/honestidade.png);
+}
+
+.Empatia{
+    background-image: url(https://movimentoimpactoglobal.com.br/wp-content/uploads/2017/07/empatia-radical_primera-vocal-1.png);
+}
+
+.Respeito{
+    background-image: url(https://1.bp.blogspot.com/-P02mXu4yHkA/Xb4Vmawlf1I/AAAAAAAAFQo/k9lBMx6zmQMHVcBioMwffbP0SNKsFUYBQCLcBGAsYHQ/s1600/respeito.png);
+}

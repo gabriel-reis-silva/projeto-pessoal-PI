@@ -1,0 +1,53 @@
+.campos{
+    width: 50%;
+    background-color: cadetblue;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.campos input{
+    margin: 10px;
+}
+body{
+    background-image: url(../img/linguagens.jpg);
+    background-size: cover;
+}
+
+.container{
+    width: 80%;
+}
+
+.caixa1_cad {
+    background-image: url(https://www.serasa.com.br/ensina/wp-content/uploads/2017/03/12135556/voce-precisa-cadastro-positivo.jpg);
+    background-position: center;
+    border-radius: 5%;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    margin-left: 25%;
+    margin-top: 10%;
+    height: 600px;
+    color: black;
+    font-size: 20px;
+    width: 50%;
+    text-align: left;
+}
+
+h2{
+    text-align: center;
+}
+
+p,input{
+margin-left: 10%;
+}
+
+.btn_envio{
+    width: 15%;
+    height: 30px;
+    color: white;
+    background-color: green;
+    border: none;
+}
+
+.btn_envio :hover{
+    background-color: greenyellow;
+}

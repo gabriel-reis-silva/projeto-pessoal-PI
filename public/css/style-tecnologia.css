@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: monospace;
+    background-image: url(https://i.pinimg.com/originals/74/d0/06/74d00626189f90860a679783b369d294.gif);
+}
+
+.header{
+    height: 45px;
+    width: 100%;
+    background-color: black;
+    background-image: url(../img/header.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.header a{
+    transition: 0.5s;
+    margin-left: 5.25px;
+}
+
+.menuaberto{
+    height: 100%;
+    width: 0;
+    background-color: #25242486;
+    position: fixed;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.btnfechar{
+    margin-top: -5px;
+    margin-right: 100%;
+}
+
+.menuaberto a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    display: block;
+    transition: 0.5s;
+    font-size: 25px;
+    text-align: center;
+}
+
+.principal{
+    transition: 0.5s;
+}
+
+.container {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+
+.container .c1{
+display: inline-block;
+}
+
+.left{
+background-color: rgba(0, 0, 0, 0.418);
+border-radius: 5%;
+background-size: cover;
+width: 45%;
+height:600px;
+margin-bottom: -75%;
+margin-top: 2%;
+border-radius: 5%;
+color: white;
+font-size: 20px;
+text-align: center;
+}
+
+.container .c2{
+margin: auto;
+width: 60%;
+text-align: center;
+}
+
+.caixa2{
+background-color: rgba(0, 0, 0, 0.418);
+border-radius: 5%;
+background-size: cover;
+width: 70%;
+height:600px;
+margin-bottom: 5%;
+margin-top: 2%;
+border-radius: 5%;
+}
+.right{
+height:285px;    
+margin-left:50%;
+}
+
+.albuns{
+    color: white;
+    margin-top: 35%;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
+}
+
+.musica{
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-image: url(../img/opws.png);
+}
+
+.musica1{
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-image: url(https://i.pinimg.com/originals/ce/69/4f/ce694f560636dffcf42ecf40d4f2f962.gif);
+}
+
+

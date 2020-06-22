@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sobremim.css">
+    <link rel="stylesheet" href="css/sobre_vc.css">
+    <script src="js/menu.js"></script>
+    <script src="funcoes.js"></script>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Sobre você</title>
+</head>
+
+<body >
+
+    <div class="menuaberto" id="menuhamburguer">
+        <a href="#" class="btnfechar" onclick="fechamenu();"><img src="img/icone_fechar.png" width="40px" id="botaofechar"></a>
+        <a href="index.html">Home</a>
+        <a href="sobre_mim.html">Quem sou eu?</a>
+        <a href="musica.html">A música</a>
+        <a href="tecnologia.html">A tecnologia</a>
+        <a href="login.html">Login</a>
+    </div>
+
+    <div class="header">
+        <a class="botaoabrir" onclick="abremenu();"><img src="img/menu_hamburguer.png" width="40px" id="btnabrir"></a>
+    </div>
+
+    <div class="principal" id="principal">
+        
+            <div class="caixa1_eu" id="caixa1">
+                   <h2 class="sobre_mim" id="b_usuario"> System.out.println ("Olá mundo");</h2><a href="#" onclick="logoff()" style="color:maroon">Sair</a> <br>
+                   <p>Você está vendo a playlist exclusiva para quem está cadastrado</p>
+                   <br>
+                   <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/br/playlist/a/pl.u-6mo4aVZTBEZbxe5"></iframe>                   
+            </div>
+        
+    </div>
+
+
+</body>
+
+</html>
+
+<script>
+let usuario;
+verificar_autenticacao();
+
+</script>
