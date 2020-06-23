@@ -40,14 +40,19 @@ p,input{
 margin-left: 10%;
 }
 
+.m-erro{
+    margin-left:50%; 
+    margin-top: -60%;
+}
+
 .btn_envio{
     width: 15%;
     height: 30px;
     color: white;
     background-color: green;
     border: none;
+    margin-left:45%;
+    position: initial;
+    margin-top:10%;
 }
 
-.btn_envio :hover{
-    background-color: greenyellow;
-}

@@ -29,19 +29,20 @@
     <div class="principal" id="principal">
         <div class="container c1">
             <div class="caixa1_cad" id="caixa1">
-                <form id="form_cadastro" method="post" onsubmit="enviaContatoProBanco()">
+                <form id="form_cadastro" onsubmit="enviaContatoProBanco()">
                     <h2>Cadastro</h2>    
                     <p>Nome:</p> <input type="text" name="nome" id="nome">
                     <p>Usuário:</p> <input type="text" name="login" id="login">
                     <p>Senha:</p> <input type="password" name="senha" id="senha">
                     <p>Data de Nascimento:</p> <input type="date" name="data_nasc" id="data_nasc">
+                    <br>
                     <button id="btn_entrar" class="btn_envio" type="submit">Cadastrar</button>
-                
-                    <ul id="mensagemErro" class="m-erro">
-                    </ul>
                 </form>
                 
-                <img src="aguarde2.gif" id="img_aguarde" style="display: none;" width="100px">
+                <ul id="mensagemErro" class="m-erro">
+                </ul>
+                
+                <img src="aguarde.gif" id="img_aguarde" style="display: none; width: 10%; margin-left: 50%;">
                 
                 <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
                     Erro no cadastro
@@ -54,7 +55,7 @@
 </html>
 <script>
 function enviaContatoProBanco(){
-console.log('parou no enviacontato');
+    event.preventDefault(); 
 var erros = validaContato(erros);
 mensagemErro.innerHTML = "";
 
@@ -71,7 +72,7 @@ if(erros.length > 0){
 
 
 function cadastrar() {
-    console.log('parou no cadastrar');
+    
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
@@ -110,11 +111,15 @@ function cadastrar() {
 }
 
 function validaContato(){
-    console.log('parou no validacontato ');    
+        
     var erros = [];
 
         if(!nome.value){
           erros.push("Prencher nome!");
+        }
+
+        if(!login.value){
+          erros.push("Prencher login!");
         }
 
         if(!senha.value){
